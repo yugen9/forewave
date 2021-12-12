@@ -29,7 +29,7 @@
   圈是首尾顶点相同的路径，如下图中（V5,V2,V3,V5）
   如果有向图中不存在任何圈，则称为“有向无圈图 directed acyclic graph：DAG”
   如果一个问题能表示成DAG，就可以用图算法很好地解决。
-  <img src="https://img-blog.csdnimg.cn/20200309134016151.png" alt="img" style="zoom:33%;" />
+  <img src="https://img-blog.csdnimg.cn/20200309134016151.png" alt="img" style="zoom:28%;" />
 
 #### 抽象数据类型：ADT Graph[^2]
 
@@ -61,7 +61,7 @@ in	                                                          按照vert in graph
 
 例如下面的带权图：
 
-<img src="https://img-blog.csdnimg.cn/20200309134541250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dkOWxqczE4,size_16,color_FFFFFF,t_70" alt="img" style="zoom: 33%;" />
+<img src="https://img-blog.csdnimg.cn/20200309134541250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dkOWxqczE4,size_16,color_FFFFFF,t_70" alt="img" style="zoom: 28%;" />
 
 邻接矩阵顶实现法的优点是简单，可以很容易得到顶点是如何相连
 但如果图中的边数很少则效率低下，成为“稀疏sparse”矩阵，而大多数问题所对应的图都是稀疏的，边远远少于|V|2这个量级，从而出现邻接列表。
@@ -124,7 +124,7 @@ class Graph:
 
 例如上面的图转为邻接列表，与V0有关的有V1和V5，权重分别是5和2：
 
-<img src="https://img-blog.csdnimg.cn/20200309140020972.png" alt="在这里插入图片描述" style="zoom: 33%;" />
+<img src="https://img-blog.csdnimg.cn/20200309140020972.png" alt="在这里插入图片描述" style="zoom: 28%;" />
 
 **算法实现:**
 
