@@ -8,7 +8,7 @@
 - 若它的右子树不为空，则右子树上所有节点的值均大于它的根结构的值；
 - 它的左、右子树也分别为二叉排序树。
 
-<img src="http://www.uml.org.cn/python/images/2017121833.png" alt="img" style="zoom: 33%;" />
+<img src="http://www.uml.org.cn/python/images/2017121833.png" alt="img"  width="30%" height="30%" />
 
 构造一颗二叉排序树的目的，往往不是为了排序，而是为了提高查找和插入删除关键字的速度。
 
@@ -25,7 +25,7 @@
 - 给定一个元素集合，可以构造不同的二叉排序树，当它同时是一个完全二叉树的时候，查找的时间复杂度为O(log(n))，近似于二分查找。
 - 当出现最极端的斜树时，其时间复杂度为O(n)，等同于顺序查找，效果最差。
 
-<img src="http://www.uml.org.cn/python/images/2017121834.png" alt="img" style="zoom:38%;" />
+<img src="http://www.uml.org.cn/python/images/2017121834.png" alt="img" width="30%" height="30%" />
 
 #### 平衡二叉树（AVL树)
 
@@ -37,7 +37,7 @@
 
 对于平衡二叉树所有包括分支节点和叶节点的平衡因子只可能是-1,0和1，只要有一个节点的因子不在这三个值之内，该二叉树就是不平衡的。
 
-<img src="http://www.uml.org.cn/python/images/2017121835.png" alt="img" style="zoom: 28%;" />
+<img src="http://www.uml.org.cn/python/images/2017121835.png" alt="img" width="30%" height="30%" />
 
 最小不平衡子树：距离插入结点最近的，且平衡因子的**绝对值**大于1的节点为根的子树。
 
@@ -46,19 +46,19 @@
 
 下面是由[1,2,3,4,5,6,7,10,9]构建平衡二叉树
 
-<img src="http://www.uml.org.cn/python/images/2017121836.png" alt="img" style="zoom:26%;" />
+<img src="http://www.uml.org.cn/python/images/2017121836.png" alt="img" width="30%" height="30%" />
 
-<img src="http://www.uml.org.cn/python/images/2017121837.png" alt="img" style="zoom:26%;" />
+<img src="http://www.uml.org.cn/python/images/2017121837.png" alt="img" width="30%" height="30%" />
 
-<img src="http://www.uml.org.cn/python/images/2017121838.png" alt="img" style="zoom:26%;" />
+<img src="http://www.uml.org.cn/python/images/2017121838.png" alt="img" width="30%" height="30%" />
 
-<img src="http://www.uml.org.cn/python/images/2017121839.png" alt="img" style="zoom:25%;" />
+<img src="http://www.uml.org.cn/python/images/2017121839.png" alt="img" width="30%" height="30%" />
 
-<img src="http://www.uml.org.cn/python/images/20171218310.png" alt="img" style="zoom:25%;" />
+<img src="http://www.uml.org.cn/python/images/20171218310.png" alt="img" width="30%" height="30%" />
 
-<img src="http://www.uml.org.cn/python/images/20171218311.png" alt="img" style="zoom:26%;" />
+<img src="http://www.uml.org.cn/python/images/20171218311.png" alt="img" width="30%" height="30%" />
 
-<img src="http://www.uml.org.cn/python/images/20171218312.png" alt="img" style="zoom:30%;" />
+<img src="http://www.uml.org.cn/python/images/20171218312.png" alt="img" width="30%" height="30%" />
 
 #### 多路查找树（B树）
 
