@@ -29,7 +29,7 @@
   圈是首尾顶点相同的路径，如下图中（V5,V2,V3,V5）
   如果有向图中不存在任何圈，则称为“有向无圈图 directed acyclic graph：DAG”
   如果一个问题能表示成DAG，就可以用图算法很好地解决。
-  ![img](https://img-blog.csdnimg.cn/20200309134016151.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dkOWxqczE4,size_16,color_FFFFFF,t_70)
+  <img src="https://img-blog.csdnimg.cn/20200309134016151.png" alt="img" style="zoom:45%;" />
 
 #### 抽象数据类型：ADT Graph[^2]
 
@@ -61,8 +61,7 @@ in	                                                          按照vert in graph
 
 例如下面的带权图：
 
-<img src="https://img-blog.csdnimg.cn/20200309134541250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dkOWxqczE4,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
+<img src="https://img-blog.csdnimg.cn/20200309134541250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dkOWxqczE4,size_16,color_FFFFFF,t_70" alt="img" style="zoom: 45%;" />
 
 邻接矩阵顶实现法的优点是简单，可以很容易得到顶点是如何相连
 但如果图中的边数很少则效率低下，成为“稀疏sparse”矩阵，而大多数问题所对应的图都是稀疏的，边远远少于|V|2这个量级，从而出现邻接列表。
@@ -125,7 +124,7 @@ class Graph:
 
 例如上面的图转为邻接列表，与V0有关的有V1和V5，权重分别是5和2：
 
-<img src="https://img-blog.csdnimg.cn/20200309140020972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dkOWxqczE4,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:67%;" />
+<img src="https://img-blog.csdnimg.cn/20200309140020972.png" alt="在这里插入图片描述" style="zoom: 45%;" />
 
 **算法实现:**
 
@@ -263,11 +262,11 @@ class Graph:
 
 以如下图的无向图G5为例，进行图的深度优先搜索：
 
-<img src="https://www.pianshen.com/images/301/f7f3381875d4fb89a51edbedd07b4d05.JPEG" alt="img" style="zoom:67%;" />
+<img src="https://www.pianshen.com/images/301/f7f3381875d4fb89a51edbedd07b4d05.JPEG" alt="img" style="zoom: 45%;" />
 
 **深度优先搜索过程：**
 
-<img src="https://www.pianshen.com/images/651/233c2b67d9d21ada5187ef66e23e8c13.JPEG" alt="img" style="zoom:67%;" />
+<img src="https://www.pianshen.com/images/651/233c2b67d9d21ada5187ef66e23e8c13.JPEG" alt="img" style="zoom: 45%;" />
 
 
 
@@ -322,13 +321,13 @@ class DFSGraph(Graph):
 
 对图如下图所示无向图G5 进行广度优先搜索遍历：
 
-<img src="https://www.pianshen.com/images/301/f7f3381875d4fb89a51edbedd07b4d05.JPEG" alt="img" style="zoom:67%;" />
+<img src="https://www.pianshen.com/images/301/f7f3381875d4fb89a51edbedd07b4d05.JPEG" alt="img" style="zoom: 45%;" />
 
 
 
 **广度优先搜索过程：**
 
-<img src="https://www.pianshen.com/images/955/4daf88968856c3e32eae6b9d854315cb.JPEG" alt="img" style="zoom:67%;" />
+<img src="https://www.pianshen.com/images/955/4daf88968856c3e32eae6b9d854315cb.JPEG" alt="img" style="zoom: 45%;" />
 
 首先访问v1 和v1 的邻接点v2 和v3，然后依次访问v2 的邻接点v4 和v5 及v3 的邻接点v6 和v7，最后访问v4 的邻接点v8。由于这些顶点的邻接点均已被访问，并且图中所有顶点都被访问，由些完成了图的遍历。得到的顶点访问序列为：
 
