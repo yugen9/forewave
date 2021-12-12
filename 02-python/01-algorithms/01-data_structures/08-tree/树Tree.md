@@ -8,7 +8,7 @@
 - 若它的右子树不为空，则右子树上所有节点的值均大于它的根结构的值；
 - 它的左、右子树也分别为二叉排序树。
 
-![img](http://www.uml.org.cn/python/images/2017121833.png)
+<img src="http://www.uml.org.cn/python/images/2017121833.png" alt="img" style="zoom: 33%;" />
 
 构造一颗二叉排序树的目的，往往不是为了排序，而是为了提高查找和插入删除关键字的速度。
 
@@ -25,7 +25,7 @@
 - 给定一个元素集合，可以构造不同的二叉排序树，当它同时是一个完全二叉树的时候，查找的时间复杂度为O(log(n))，近似于二分查找。
 - 当出现最极端的斜树时，其时间复杂度为O(n)，等同于顺序查找，效果最差。
 
-![img](http://www.uml.org.cn/python/images/2017121834.png)
+<img src="http://www.uml.org.cn/python/images/2017121834.png" alt="img" style="zoom:38%;" />
 
 #### 平衡二叉树（AVL树)
 
@@ -37,7 +37,7 @@
 
 对于平衡二叉树所有包括分支节点和叶节点的平衡因子只可能是-1,0和1，只要有一个节点的因子不在这三个值之内，该二叉树就是不平衡的。
 
-<img src="http://www.uml.org.cn/python/images/2017121835.png" alt="img" style="zoom: 33%;" />
+<img src="http://www.uml.org.cn/python/images/2017121835.png" alt="img" style="zoom: 28%;" />
 
 最小不平衡子树：距离插入结点最近的，且平衡因子的**绝对值**大于1的节点为根的子树。
 
@@ -46,19 +46,19 @@
 
 下面是由[1,2,3,4,5,6,7,10,9]构建平衡二叉树
 
-<img src="http://www.uml.org.cn/python/images/2017121836.png" alt="img" style="zoom:33%;" />
+<img src="http://www.uml.org.cn/python/images/2017121836.png" alt="img" style="zoom:26%;" />
 
-<img src="http://www.uml.org.cn/python/images/2017121837.png" alt="img" style="zoom:33%;" />
+<img src="http://www.uml.org.cn/python/images/2017121837.png" alt="img" style="zoom:26%;" />
 
-<img src="http://www.uml.org.cn/python/images/2017121838.png" alt="img" style="zoom:33%;" />
+<img src="http://www.uml.org.cn/python/images/2017121838.png" alt="img" style="zoom:26%;" />
 
-<img src="http://www.uml.org.cn/python/images/2017121839.png" alt="img" style="zoom:33%;" />
+<img src="http://www.uml.org.cn/python/images/2017121839.png" alt="img" style="zoom:25%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218310.png" alt="img" style="zoom:33%;" />
+<img src="http://www.uml.org.cn/python/images/20171218310.png" alt="img" style="zoom:25%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218311.png" alt="img" style="zoom:33%;" />
+<img src="http://www.uml.org.cn/python/images/20171218311.png" alt="img" style="zoom:26%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218312.png" alt="img" style="zoom:33%;" />
+<img src="http://www.uml.org.cn/python/images/20171218312.png" alt="img" style="zoom:30%;" />
 
 #### 多路查找树（B树）
 
@@ -76,35 +76,35 @@
 
 2-3树中所有的叶子都必须在同一层次上。
 
-<img src="http://www.uml.org.cn/python/images/20171218313.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218313.png" alt="img" style="zoom: 35%;" />
 
 其插入操作如下：
 
-<img src="http://www.uml.org.cn/python/images/20171218314.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218314.png" alt="img" style="zoom: 38%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218315.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218315.png" alt="img" style="zoom: 38%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218316.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218316.png" alt="img" style="zoom: 38%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218317.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218317.png" alt="img" style="zoom: 38%;" />
 
 其删除操作如下：
 
-<img src="http://www.uml.org.cn/python/images/20171218318.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218318.png" alt="img" style="zoom: 38%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218319.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218319.png" alt="img" style="zoom: 40%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218320.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218320.png" alt="img" style="zoom: 38%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218321.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218321.png" alt="img" style="zoom: 38%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218322.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218322.png" alt="img" style="zoom: 38%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218323.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218323.png" alt="img" style="zoom: 40%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218324.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218324.png" alt="img" style="zoom: 38%;" />
 
-<img src="http://www.uml.org.cn/python/images/20171218325.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/20171218325.png" alt="img" style="zoom: 35%;" />
 
 ##### 2-3-4树
 
@@ -112,11 +112,11 @@
 
 其插入操作:
 
-![img](http://www.uml.org.cn/python/images/20171218326.png)
+<img src="http://www.uml.org.cn/python/images/20171218326.png" alt="img" style="zoom:40%;" />
 
 其删除操作：
 
-![img](http://www.uml.org.cn/python/images/20171218327.png)
+<img src="http://www.uml.org.cn/python/images/20171218327.png" alt="img" style="zoom:40%;" />
 
 ##### B树
 
@@ -124,11 +124,11 @@ B树是一种平衡的多路查找树。节点最大的孩子数目称为B树的
 
 B树的数据结构主要用在内存和外部存储器的数据交互中。
 
-![img](http://www.uml.org.cn/python/images/20171218328.png)
+<img src="http://www.uml.org.cn/python/images/20171218328.png" alt="img" style="zoom:38%;" />
 
-![img](http://www.uml.org.cn/python/images/20171218329.png)
+<img src="http://www.uml.org.cn/python/images/20171218329.png" alt="img" style="zoom:38%;" />
 
-![img](http://www.uml.org.cn/python/images/20171218330.png)
+<img src="http://www.uml.org.cn/python/images/20171218330.png" alt="img" style="zoom:38%;" />
 
 ##### B+树
 
@@ -138,7 +138,7 @@ B+树是应文件系统所需而出现的一种B树的变形树，严格意义�
 
 B+树中，出现在分支节点中的元素会被当做他们在该分支节点位置的中序后继者（叶子节点）中再次列出。另外，每一个叶子节点都会保存一个指向后一叶子节点的指针。
 
-![img](http://www.uml.org.cn/python/images/20171218331.png)
+<img src="http://www.uml.org.cn/python/images/20171218331.png" alt="img" style="zoom:40%;" />
 
 所有的叶子节点包含全部的关键字的信息，及相关指针，叶子节点本身依关键字的大小自小到大顺序链接
 
@@ -159,7 +159,7 @@ B+树的结构特别适合带有范围的查找。比如查找年龄在20~30岁�
 	2）若任意节点的右子树不空，则右子树上所有结点的值均大于它的根结点的值；
 	3）任意节点的左、右子树也分别为二叉查找树。 二叉查找树性质：对二叉查找树进行中序遍历，即可得到有序的数列。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuIj4HWHt8wGibBgjx8LTJ5UGeNjm1oEk513wyVNW2CSyCrZ9fPjXj6wA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuIj4HWHt8wGibBgjx8LTJ5UGeNjm1oEk513wyVNW2CSyCrZ9fPjXj6wA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:38%;" />
 
 ###### 复杂度分析 
 
@@ -309,18 +309,20 @@ if __name__ == '__main__':
     # print("\n", bs_tree.search(4))
 ```
 
+
+
 ##### 2. 平衡查找树之2-3查找树（2-3 Tree）    
 
 ###### 算法描述
 
-####### 2-3查找树定义      
+2-3查找树定义      
 
 ​		和二叉树不一样，2-3树运行每个节点保存1个或者两个的值。对于普通的2节点(2-node)，他保存1个key和左右两个自己点。对应3节点(3-node)，保存两个Key，2-3查找树的定义如下：
 ​	1）要么为空，要么：
 ​	2）对于2节点，该节点保存一个key及对应value，以及两个指向左右节点的节点，左节点也是一个2-3节点，所有的值都比key要小，右节点也是一个2-3节点，所有的值比key要大。
 ​	3）对于3节点，该节点保存两个key及对应value，以及三个指向左中右的节点。左节点也是一个2-3节点，所有的值均比两个key中的最小的key还要小；中间节点也是一个2-3节点，中间节点的key值在两个跟节点key值之间；右节点也是一个2-3节点，节点的所有key值比两个key中的最大的key还要大。
 
-####### 2-3查找树的性质 
+2-3查找树的性质 
 
 ​	1）如果中序遍历2-3查找树，就可以得到排好序的序列；
 ​	2）在一个完全平衡的2-3查找树中，根节点到每一个为空节点的距离都相同。（这也是平衡树中“平衡”一词的概念，根节点到叶节点的最长距离对应于查找算法的最坏情况，而平衡树中根节点到叶节点的距离都一样，最坏情况也具有对数复杂度。） 
@@ -331,7 +333,7 @@ if __name__ == '__main__':
 ​		距离来说，对于1百万个节点的2-3树，树的高度为12-20之间，对于10亿个节点的2-3树，树的高度为18-30之间。
 ​		对于插入来说，只需要常数次操作即可完成，因为他只需要修改与该节点关联的节点即可，不需要检查其他节点，所以效率和查找类似。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicu4pTpYLSIkc8Eeqjwq22jTQSbTLfWFpKc8VIpLKNz6lg5E8F4rrgO2g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicu4pTpYLSIkc8Eeqjwq22jTQSbTLfWFpKc8VIpLKNz6lg5E8F4rrgO2g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:40%;" />
 
 ###### 算法实现
 
@@ -440,29 +442,30 @@ class 2_3_Tree(object):
                 newnode.middle=pRef
         node.key2=None
         return pKey,newnode
+    
 ```
+
+
 
 ##### 3. 平衡查找树之红黑树（Red-Black Tree）
 
 ###### 红黑树的定义 
-
 红黑树是一种具有红色和黑色链接的平衡查找树，同时满足：
 	① 红色节点向左倾斜 ；
 	②一个节点不可能有两个红色链接；
 	③整个树完全黑色平衡，即从根节点到所以叶子结点的路径上，黑色链接的个数都相同。   
 
-####### 红黑树的性质
+###### 红黑树的性质
+整个树完全黑色平衡，即从根节点到所以叶子结点的路径上，黑色链接的个数都相同（2-3树的第2）性质，从根节点到叶子节点的距离都相等）。
 
-​		整个树完全黑色平衡，即从根节点到所以叶子结点的路径上，黑色链接的个数都相同（2-3树的第2）性质，从根节点到叶子节点的距离都相等）。
-
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicue2PIdGaOwBerfYTStzhp3N58YOMcCqbB99E6FXicXxYO4Q3iaDLrgquQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicue2PIdGaOwBerfYTStzhp3N58YOMcCqbB99E6FXicXxYO4Q3iaDLrgquQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:35%;" />
 
 ###### 复杂度分析      
 
 ​		最坏的情况就是，红黑树中除了最左侧路径全部是由3-node节点组成，即红黑相间的路径长度是全黑路径长度的2倍。
 ​		下图是一个典型的红黑树，从中可以看到最长的路径(红黑相间的路径)是最短路径的2倍：
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicupuQrBVL0PvS7AKvUHsBDTSqmqWBWy16K0EibhdibWldNSWsRC4v8Uj6w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicupuQrBVL0PvS7AKvUHsBDTSqmqWBWy16K0EibhdibWldNSWsRC4v8Uj6w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:38%;" />
 
 ###### 算法实现
 
@@ -809,7 +812,7 @@ B 树可以看作是对2-3查找树的一种扩展，即他允许每个节点有
 	⑥其它节点至少有M/2个子节点；
 	⑦所有叶子结点位于同一层；     如：（M=3）
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddiculUicnQB751oohek7KdAHweV2JMia5ibIvyEmJ7ibgNm48bickicDYrrrtyJA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddiculUicnQB751oohek7KdAHweV2JMia5ibIvyEmJ7ibgNm48bickicDYrrrtyJA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:40%;" />
 
 ###### B树算法思想     
 
@@ -837,7 +840,7 @@ B树的特性
 
 ​    如：（M=3）
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuTfmwNicylfx8TJGgclTg4vvickyb1bdFGWxNoicRJia8JSMH1gsfBcXkFQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuTfmwNicylfx8TJGgclTg4vvickyb1bdFGWxNoicRJia8JSMH1gsfBcXkFQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:40%;" />
 
 ###### B+树算法思想
 
@@ -925,3 +928,4 @@ if __name__ == "__main__":
 ​		在二叉查找树的基础上进行优化，我们可以使用平衡查找树。平衡查找树中的2-3查找树，这种数据结构在插入之后能够进行自平衡操作，从而保证了树的高度在一定的范围内进而能够保证最坏情况下的时间复杂度。但是2-3查找树实现起来比较困难，红黑树是2-3树的一种简单高效的实现，他巧妙地使用颜色标记来替代2-3树中比较难处理的3-node节点问题。红黑树是一种比较高效的平衡查找树，应用非常广泛，很多编程语言的内部实现都或多或少的采用了红黑树。 　　
 
 ​	除此之外，2-3查找树的另一个扩展——B/B+平衡树，在文件系统和数据库系统中有着广泛的应用。
+
