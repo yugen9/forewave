@@ -29,7 +29,7 @@
   圈是首尾顶点相同的路径，如下图中（V5,V2,V3,V5）
   如果有向图中不存在任何圈，则称为“有向无圈图 directed acyclic graph：DAG”
   如果一个问题能表示成DAG，就可以用图算法很好地解决。
-  <img src="https://img-blog.csdnimg.cn/20200309134016151.png" alt="img" style="zoom:28%;" />
+  <img src="https://img-blog.csdnimg.cn/2020030913401615.png" alt="img" style="zoom:28%;" />
 
 #### 抽象数据类型：ADT Graph[^2]
 
