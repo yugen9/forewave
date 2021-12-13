@@ -2,7 +2,9 @@
 
 链表是实现了数据之间保持逻辑顺序，但存储空间不必按顺序的方法。可以用一个图来表示这种链表的数据结构：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-01.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-01.jpg)
+<center>
+    <img src="https://zhaochj.github.io/images/2016-05-13-01.jpg" alt="链表" width="50%" height="50%" />
+</center>
 
 **基本要素：**
 
@@ -22,9 +24,11 @@
 7. size()                      返回链表的元素数，不需要参数，返回值是个整数
 8. search(item)         查找链表某元素，参数为要查找的元素或索引，返回是布尔值
 
-**链表种类：**单向链表、单向循环链表、双向链表、双向循环链表
+**链表种类：**单向链表、单向循环链表、双向链表、双向循环链表 
 
-​                  ![img](https://img-blog.csdn.net/20180721154905692?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zNzcyODAzMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+ <center>
+     <img src="https://img-blog.csdn.net/20180721154905692?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zNzcyODAzMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"  width="50%" height="50%" />
+ </center>             
 
 #### 节点类
 
@@ -49,7 +53,9 @@ node = Node(4)
 
 这样一个节点对象可以用一个图例来更形象的说明，如下：
 
-<img src="https://zhaochj.github.io/images/2016-05-13-02.jpg" alt="链表" style="zoom:67%;" />  
+<div align=center>
+    <img src="https://zhaochj.github.io/images/2016-05-13-02.jpg" alt="链表"  width="40%" height="40%" />
+</div>
 
 #### 链表类
 
@@ -70,8 +76,9 @@ link_list = LinkedList()
 
 也可以用图形象的表示这个链表对象，如下：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-03.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-03.jpg)
-　　　　　　　　　　　　　　　
+<div align=center>
+    <img src="https://zhaochj.github.io/images/2016-05-13-03.jpg" alt="链表"  width="40%" height="40%" />
+</div>　　　　　　　　　　　　　
 
 ##### is_empty方法实现
 
@@ -109,7 +116,7 @@ link_list(append(4))
 
 此时的链表结构如下图：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-04.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-04.jpg)
+<img src="https://zhaochj.github.io/images/2016-05-13-04.jpg" alt="链表"  width="40%" height="40%" />
 
 当`if self.head is None:`为`False`时,说明链表已经增加了一个节点了，再增加一个节点时`head`已经指向了第一个节点，所以不为`None`，比如增加的第二个节点为：
 
@@ -119,11 +126,11 @@ link_list(append(5))
 
 增加第二个节点的操作需要分两步完成，第一步：`self.tail.next = node`，即把上一个节点的`next`指针指向当前`node`；第二步：`self.tail = node`，把`tail`移动到`node`，如下图：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-05.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-05.jpg)
+<img src="https://zhaochj.github.io/images/2016-05-13-05.jpg" alt="链表"  width="50%" height="50%" />
 
 移动完成后就成这样了：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-06.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-06.jpg)
+<img src="https://zhaochj.github.io/images/2016-05-13-06.jpg" alt="链表"  width="50%" height="50%" />
 
 当增加第三个、第四个等节点时，按照上边的操作依次类推。
 
@@ -148,7 +155,7 @@ def iter(self):
 
 假如采取`append`方法又增加了两个节点，增加完成后如下图：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-07.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-07.jpg)
+<img src="https://zhaochj.github.io/images/2016-05-13-07.jpg" alt="链表"  width="50%" height="50%" />
 
 如果想在数据域为`6`的那节点处插入一个节点，需要做的操作有两步：
 
@@ -159,7 +166,7 @@ def iter(self):
 
 示意图如下：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-08.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-08.jpg)
+<img src="https://zhaochj.github.io/images/2016-05-13-08.jpg" alt="链表"  width="50%" height="50%" />
 
 还要额外考虑两种情况：
 
@@ -169,7 +176,7 @@ def iter(self):
 
 当是在链表最后一个节点插入时，示意图如下：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-09.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-09.jpg)
+<img src="https://zhaochj.github.io/images/2016-05-13-09.jpg" alt="链表"  width="50%" height="50%" />
 
 要在指定的索引位置插入一个节点，前提是需要找到这个位置，在链表中只有采用遍历的方式，具有O(n)的速度，最糟糕时会遍历链表的所有节点，而当找到插入点时，我们并不需要当前节点的信息，而是需要前一个节点的信息，所以代码中巧妙的使用了`while cur_idx < idx-1:`的方式，这样能使用`cur`这个变量能指向插入点上一个节点对象。
 
@@ -205,9 +212,9 @@ remove方法接收一个idx参数，表示要删除节点的索引，此方法�
 
 请看下边图例：
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-10.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-10.jpg)
+<img src="https://zhaochj.github.io/images/2016-05-13-10.jpg" alt="链表"  width="50%" height="50%" />
 
-[<img src="https://zhaochj.github.io/images/2016-05-13-11.jpg" alt="链表" style="zoom:67%;" />](https://zhaochj.github.io/images/2016-05-13-11.jpg)
+<img src="https://zhaochj.github.io/images/2016-05-13-11.jpg" alt="链表"  width="50%" height="50%" />
 
 以下为remove函数的代码：
 
