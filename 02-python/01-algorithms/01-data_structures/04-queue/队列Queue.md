@@ -41,39 +41,42 @@ class Queue(object):
 * 优先级队列(queue.PriorityQueue)# 优先级队列越低越先出来(堆)
 
 **FIFO：**
-`q=queue.queue(maxsize=10)`     # 创建一个队列长度为10的对象
-	q.put(x)                                         # 队尾插入数据x
-	q.get()                                            # 队首删除数据并返回该数据
-	q.qsize()                                        # 返回队列的大小
-	q.empty()                                     # 判断队列是否为空：若为空则返回True，反之则FALSE
-	q.full()                                           # 判断是否为满：与maxsize相呼应
-
+```python
+q=queue.queue(maxsize=10)     # 创建一个队列长度为10的对象
+q.put(x)                      # 队尾插入数据x
+q.get()                       # 队首删除数据并返回该数据
+q.qsize()                     # 返回队列的大小
+q.empty()                     # 判断队列是否为空：若为空则返回True，反之则FALSE
+q.full()                      # 判断是否为满：与maxsize相呼应
+```
 ##### 双端队列Deque(from collections import deque)
 
 双端队列（deque，全名double-ended queue），是一种具有队列和栈的性质的数据结构。
 
 双端队列中的元素可以从两端弹出，其限定插入和删除操作在表的两端进行。双端队列可以在队列任意一端入队和出队。
-
-  `q=deque(5)`     # 新建一个一个大小为5的deque对象
-	q.appendleft(x)：在列表左侧插入	                     O(1)
-	q.popleft()：         弹出列表左侧的值                     O(1)
-	extendleft：         在左侧扩展                                 O(k)
-	q.append(x)：      在列表右侧插入                         O(1)
-	q.pop()：               弹出列表右侧的值                     O(1)
-	extend：               在右侧扩展                                 O(k)
-	q.rotate(-n)：        将左端的n个元素移动到右端   O(k)
-　q.rotate(n)：         将右端的n个元素移动到左端
-　　q=deque('abcdef')
-        q.rotate(-2)
-        print(q)               # deque(['c','d','e','f','a','b'])
-        q.rotate(2)
-        print(q)               # deque(['e','f','a','b','c','d'])
-	q.remove('c')：      删除一个指定元素                     O(n)
-	q.clear()：              清空链表所有元素，使其长度为0
-	q.reverse()：         将队列反转
-	q.count(x)：           返回q中x的数量
-	len(q)：                   返回q的长度
-
+```python
+q=deque(5)         # 新建一个一个大小为5的deque对象
+q.appendleft(x)：  # 在列表左侧插入	    O(1)
+q.popleft()：      # 弹出列表左侧的值   O(1)
+extendleft：       # 在左侧扩展        O(k)
+q.append(x)：      # 在列表右侧插入     O(1)
+q.pop()：          # 弹出列表右侧的值   O(1)
+extend：           # 在右侧扩展        O(k)
+q.rotate(-n)：     # 将左端的n个元素移动到右端   O(k)
+q.rotate(n)：      # 将右端的n个元素移动到左端
+'''
+q=deque('abcdef')
+q.rotate(-2)
+print(q)           # deque(['c','d','e','f','a','b'])
+q.rotate(2)
+print(q)           # deque(['e','f','a','b','c','d'])
+'''
+q.remove('c')：    # 删除一个指定元素    O(n)
+q.clear()：        # 清空链表所有元素，使其长度为0
+q.reverse()：      # 将队列反转
+q.count(x)：       # 返回q中x的数量
+len(q)：           # 返回q的长度
+```
 ##### 循环队列LoopQueue
 队尾出来进队首，双端队列的rotate可以实现循环队列。
 
