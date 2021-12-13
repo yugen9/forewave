@@ -241,7 +241,7 @@ if __name__ == '__main__':
 	2）若任意节点的右子树不空，则右子树上所有结点的值均大于它的根结点的值；
 	3）任意节点的左、右子树也分别为二叉查找树。 二叉查找树性质：对二叉查找树进行中序遍历，即可得到有序的数列。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuIj4HWHt8wGibBgjx8LTJ5UGeNjm1oEk513wyVNW2CSyCrZ9fPjXj6wA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuIj4HWHt8wGibBgjx8LTJ5UGeNjm1oEk513wyVNW2CSyCrZ9fPjXj6wA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="35%;" />
 
 ###### 复杂度分析 
 
@@ -412,7 +412,7 @@ if __name__ == '__main__':
 ​		距离来说，对于1百万个节点的2-3树，树的高度为12-20之间，对于10亿个节点的2-3树，树的高度为18-30之间。
 ​		对于插入来说，只需要常数次操作即可完成，因为他只需要修改与该节点关联的节点即可，不需要检查其他节点，所以效率和查找类似。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicu4pTpYLSIkc8Eeqjwq22jTQSbTLfWFpKc8VIpLKNz6lg5E8F4rrgO2g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicu4pTpYLSIkc8Eeqjwq22jTQSbTLfWFpKc8VIpLKNz6lg5E8F4rrgO2g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%;" />
 
 ##### 算法实现
 
@@ -538,14 +538,14 @@ class 2_3_Tree(object):
 
 ​		整个树完全黑色平衡，即从根节点到所以叶子结点的路径上，黑色链接的个数都相同（2-3树的第2）性质，从根节点到叶子节点的距离都相等）。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicue2PIdGaOwBerfYTStzhp3N58YOMcCqbB99E6FXicXxYO4Q3iaDLrgquQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicue2PIdGaOwBerfYTStzhp3N58YOMcCqbB99E6FXicXxYO4Q3iaDLrgquQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%;" />
 
 ###### 复杂度分析      
 
 ​		最坏的情况就是，红黑树中除了最左侧路径全部是由3-node节点组成，即红黑相间的路径长度是全黑路径长度的2倍。
 ​		下图是一个典型的红黑树，从中可以看到最长的路径(红黑相间的路径)是最短路径的2倍：
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicupuQrBVL0PvS7AKvUHsBDTSqmqWBWy16K0EibhdibWldNSWsRC4v8Uj6w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicupuQrBVL0PvS7AKvUHsBDTSqmqWBWy16K0EibhdibWldNSWsRC4v8Uj6w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%;" />
 
 ###### 算法实现
 
@@ -892,7 +892,7 @@ B 树可以看作是对2-3查找树的一种扩展，即他允许每个节点有
 	⑥其它节点至少有M/2个子节点；
 	⑦所有叶子结点位于同一层；     如：（M=3）
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddiculUicnQB751oohek7KdAHweV2JMia5ibIvyEmJ7ibgNm48bickicDYrrrtyJA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddiculUicnQB751oohek7KdAHweV2JMia5ibIvyEmJ7ibgNm48bickicDYrrrtyJA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%;" />
 
 ###### B树算法思想     
 
@@ -920,7 +920,7 @@ B树的特性
 
 ​    如：（M=3）
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuTfmwNicylfx8TJGgclTg4vvickyb1bdFGWxNoicRJia8JSMH1gsfBcXkFQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuTfmwNicylfx8TJGgclTg4vvickyb1bdFGWxNoicRJia8JSMH1gsfBcXkFQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%;" />
 
 ###### B+树算法思想
 
@@ -1017,7 +1017,7 @@ if __name__ == "__main__":
 
 将n个数据元素"按块有序"划分为m块（m ≤ n）。     每一块中的结点不必有序，但块与块之间必须"按块有序"；     即第1块中任一元素的关键字都必须小于第2块中任一元素的关键字；     而第2块中任一元素又都必须小于第3块中的任一元素，……
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuZKZnCfJn0iayExdsFHRibRCw2cnC3Yxn62FaC0obpEkl0R4WnyIWJF6A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<img src="https://mmbiz.qpic.cn/mmbiz_png/viaxzHeHib8eibFvME0ic7AEWvZEOib58ddicuZKZnCfJn0iayExdsFHRibRCw2cnC3Yxn62FaC0obpEkl0R4WnyIWJF6A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%;" />
 
 ##### 算法流程　     
 
@@ -1134,7 +1134,7 @@ if __name__ == '__main__':
 
 稠密索引指的是在线性索引中，为数据集合中的每个记录都建立一个索引项。
 
-<img src="http://www.uml.org.cn/python/images/2017121831.png" alt="img" style="zoom:33%;" />
+<img src="http://www.uml.org.cn/python/images/2017121831.png" alt="img" width="33%;" />
 
 这其实就相当于给无序的集合，建立了一张有序的线性表。其索引项一定是按照关键码进行有序的排列。
 
@@ -1146,7 +1146,7 @@ if __name__ == '__main__':
 
 这其实是有序查找和无序查找的一种中间状态或者说妥协状态。因为数据量过大，建立完整的稠密索引耗时耗力，占用资源过多；但如果不做任何排序或者索引，那么遍历的查找也无法接受，只能折中，做一定程度的排序或索引。
 
-<img src="http://www.uml.org.cn/python/images/2017121832.png" alt="img" style="zoom: 50%;" />
+<img src="http://www.uml.org.cn/python/images/2017121832.png" alt="img" width="33%;" />
 
 分块索引的效率比遍历查找的O(n)要高一些，但与二分查找的O(logn)还是要差不少。
 
