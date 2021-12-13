@@ -23,14 +23,14 @@
 时间复杂度：对排序数据的总的操作次数。反映当n变化时，操作次数呈现什么规律。
 空间复杂度：是指算法在计算机内执行时所需存储空间的度量，它也是数据规模n的函数。
 
-<img src="https://img2018.cnblogs.com/blog/1696039/201909/1696039-20190903203734714-743188197.png" alt="img" style="zoom: 25%;" />
+<img src="https://img2018.cnblogs.com/blog/1696039/201909/1696039-20190903203734714-743188197.png" alt="img" width="60%;" />
 
 #### 10种经典排序算法:[^1]
 
 1. [**冒泡排序**](#1. 冒泡排序)
 2. [**选择排序**](#2. 选择排序)
-3. [**快速排序**](#3. **快速排序**)
-4. [**归并排序**](#4. **归并排序**)
+3. [**快速排序**](#3. 快速排序)
+4. [**归并排序**](#4. 归并排序)
 5. [**堆排序**](#5. 堆排序)
 6. [**插入排序**](#6. 插入排序)
 7. [**希尔排序**](#7. 希尔排序)
@@ -42,7 +42,7 @@
 
 冒泡排序（Bubble Sort）是一种比较简单的排序算法，它重复地走访过要排序的元素，依次比较相邻两个元素，如果它们的顺序错误就把他们调换过来，直到没有元素再需要交换，排序完成。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQXcJQOiblMUJXPayib9uD6c3fVFyC6ZEnhEkB5eM4uqt3CaHz4mCpYtIg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQXcJQOiblMUJXPayib9uD6c3fVFyC6ZEnhEkB5eM4uqt3CaHz4mCpYtIg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%;" />
 
 > 注：上图中，数字表示的是数据序列原始的索引号。
 
@@ -94,7 +94,7 @@ def bubble_sort(lst):
 
 选择排序每次选出最小（最大）的元素，因此需要遍历 n-1 次。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQ3lF7B2tiacQaEymLibIr7CAOIFeicZTT2JCnAibe85Iicc3CsNia1OQuLn8Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQ3lF7B2tiacQaEymLibIr7CAOIFeicZTT2JCnAibe85Iicc3CsNia1OQuLn8Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 ##### Python代码
 
@@ -135,11 +135,11 @@ def selection_sort(lst):
 
 如下图，对于数据序列，先取第一个数据 `15`为基准数，将比 `15` 小的数放在左边，比 `15` 大（大于或等于）的数放在右边
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQr57xuzsqCbOjfaS9B5eTNdynVokrtiaMTU7tvKebHPlj1KDYsQ7Fyxg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQr57xuzsqCbOjfaS9B5eTNdynVokrtiaMTU7tvKebHPlj1KDYsQ7Fyxg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 接下来，对于左边部分，重复上面的步骤，如下图，取左边序列的第一个数据 `11` 为基准数，将比 `11` 小的数放在左边，比 `11` 大（大于或等于）的数放在右边。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQWv4VXHwdI9v50ibl7BN4P6JXkf9DHtA3U9vTlSyNXebXNN57NiaicUicLg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom: 33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQWv4VXHwdI9v50ibl7BN4P6JXkf9DHtA3U9vTlSyNXebXNN57NiaicUicLg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 继续递归重复上述过程，直到每个区间只有一个数。这样就会完成排序
 
@@ -192,11 +192,11 @@ def quick_sort(lst):
 
 首次拆分如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQxCb7dRYcyOAPIiahe3FfaXB77Cou7VGsibqSvmgr6xUoK9NWMrotvXTw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:34%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQxCb7dRYcyOAPIiahe3FfaXB77Cou7VGsibqSvmgr6xUoK9NWMrotvXTw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 第一次拆分后，依次对子序列进行拆分，拆分过程如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQ5mfAeXlmqoAjYDE7C4yBknWRA76HE6vbBx08HkucwiaGfn3S7LaiaLGg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQ5mfAeXlmqoAjYDE7C4yBknWRA76HE6vbBx08HkucwiaGfn3S7LaiaLGg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 ###### 合并
 
@@ -204,7 +204,7 @@ def quick_sort(lst):
 
 合并过程的完整图示如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQsGsbXRcjyAPNZvT3UB7ZmXbI6do2ak1YibUlOFX3vd45pAjbuFDibzEQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQsGsbXRcjyAPNZvT3UB7ZmXbI6do2ak1YibUlOFX3vd45pAjbuFDibzEQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 ##### Python代码
 
@@ -262,21 +262,21 @@ def merge_sort(lst):
 
 **情形1：**
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQGI1Pr0OsnzEULdhECr9Hh3y0yIaybqm1S3CzuQia86cGyTqu8nv2icLw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQGI1Pr0OsnzEULdhECr9Hh3y0yIaybqm1S3CzuQia86cGyTqu8nv2icLw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 **情形2：**
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQCqaQPGiaqSHclI9Zt0EWlrtA1x99hr69vsOau01EBDwZxclCYb2VgFg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQCqaQPGiaqSHclI9Zt0EWlrtA1x99hr69vsOau01EBDwZxclCYb2VgFg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 若序列 是堆，则堆顶元素必为序列中n个元素的最小值或最大值。
 
 `小顶堆`如下图所示：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQtHDibayu7yJNmw4ALSsDqicHuMozYKqibx8bK4cMczI0rRohm02NWh3xA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQtHDibayu7yJNmw4ALSsDqicHuMozYKqibx8bK4cMczI0rRohm02NWh3xA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 `大顶堆`如下图所示：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQYYe8XpBLQp2BJNyaHp7J6gSibkY1f5Ub9FZZ8DSXkKLic5kNuDP3k4hw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQYYe8XpBLQp2BJNyaHp7J6gSibkY1f5Ub9FZZ8DSXkKLic5kNuDP3k4hw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 若在输出堆顶的最小值（或最大值）之后，使得剩余n-1个元素的序列重又建成一个堆，则得到n个元素的次小值（或次大值）。如此反复执行，便能得到一个有序序列，这个过程称之为 `堆排序`。
 
@@ -288,11 +288,11 @@ def merge_sort(lst):
 
 小顶堆:
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQGLe04IvHoYURkHlcwfSBID1E4KA8TOibWUbj53FP3Psic3IsYWUdibG0Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQGLe04IvHoYURkHlcwfSBID1E4KA8TOibWUbj53FP3Psic3IsYWUdibG0Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 大顶堆:
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQFmr1hjZicFyvtd4TsjqW4509J54PwKJZYBfTZCq2BWo4icxHWtbXuFFw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQFmr1hjZicFyvtd4TsjqW4509J54PwKJZYBfTZCq2BWo4icxHWtbXuFFw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 每幅图的右边为其数据存储结构，左边为其逻辑结构。
 
@@ -307,11 +307,11 @@ def merge_sort(lst):
 
 第一个问题实际上就是堆的初始化，下面来阐述下如何构造初始堆，假设初始的数据序列如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQSyibVCK49VMicPmUAkvcSgA3PKXxlydb0UxlaJP7ficeXwpO9jPuuYickA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQSyibVCK49VMicPmUAkvcSgA3PKXxlydb0UxlaJP7ficeXwpO9jPuuYickA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 咱们首先需要将其以树形结构来展示，如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQNWmzjO3HM6Pfqp33rCOJTH0aSw71Pm71ic8arrVgebKe5WFJqEhTR3g/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQNWmzjO3HM6Pfqp33rCOJTH0aSw71Pm71ic8arrVgebKe5WFJqEhTR3g/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 初始化堆的时候是对所有的非叶子结点进行筛选。
 
@@ -321,7 +321,7 @@ def merge_sort(lst):
 
 以小顶堆为例，构造初始堆的过程如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_gif/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQlv5KOLspsBdqfAIvk9WUz4HpZMgI7QjKiaicib6EPok8LicPPVy86ArTug/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_gif/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQlv5KOLspsBdqfAIvk9WUz4HpZMgI7QjKiaicib6EPok8LicPPVy86ArTug/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片" width="40%" />
 
 ###### 进行堆排序
 
@@ -333,15 +333,15 @@ def merge_sort(lst):
 
 大顶堆:
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQVSCEziccs87d2lFTaXoEupFZDoWpUZDpfwTwopCkwXvIRYcmpOFp1aA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQVSCEziccs87d2lFTaXoEupFZDoWpUZDpfwTwopCkwXvIRYcmpOFp1aA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 交换堆顶元素和最后的元素:
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQRxPpeY9MupfxDQP5aCS8oq02V6FmhyC0IfQsVnXPiaRaTh8L9m1MzNw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQRxPpeY9MupfxDQP5aCS8oq02V6FmhyC0IfQsVnXPiaRaTh8L9m1MzNw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 无序区-1，有序区+1:
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQURaaIx2vibcz4n57mXIZOUnlqjibPDgicd6l6pygDf6lX8TvTIic4XDCIQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQURaaIx2vibcz4n57mXIZOUnlqjibPDgicd6l6pygDf6lX8TvTIic4XDCIQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 不断进行此操作，将剩下的元素重新调整为堆，然后输出堆顶元素到有序区。每次交换都导致无序区-1，有序区+1。不断重复此过程直到有序区长度增长为n-1，排序完成。
 
@@ -394,7 +394,7 @@ def heap_sort(lst):
 
 插入排序如同打扑克牌一样，每次将后面的牌插到前面已经排好序的牌中。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQvAaeibjWQAALwK9aLOUreBRzbrS9ialK5P8EpPWkAQsOlcFLLodctPkQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQvAaeibjWQAALwK9aLOUreBRzbrS9ialK5P8EpPWkAQsOlcFLLodctPkQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="20%" />
 
 ##### Python代码
 
@@ -433,21 +433,21 @@ def insertion_sort(lst):
 
 对于下面这个数据序列，初始间隔数值为5
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQXPWofbTwMHlddQ74s7k8uukd1c9iabibyXsHY8tmT0uTFBQB9CPR0ib4A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQXPWofbTwMHlddQ74s7k8uukd1c9iabibyXsHY8tmT0uTFBQB9CPR0ib4A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 先将数据序列按间隔进行子序列分组，第一个子序列的索引为[0,5,10]，这里分成了5组。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQHicoCicrjiagYWALDcb6o1picU2Txjc8py4Fp68iaIACfmMv4pEZDxdYh0A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQHicoCicrjiagYWALDcb6o1picU2Txjc8py4Fp68iaIACfmMv4pEZDxdYh0A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 为方便大家区分不同的子序列，对同一个子序列标注相同的颜色，分组情况如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQTYF3yUy0qtI2szUT9ChnkyVicGhNuZFoKgAibyxARLAKIBxicbN3CxIPA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQTYF3yUy0qtI2szUT9ChnkyVicGhNuZFoKgAibyxARLAKIBxicbN3CxIPA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 分组结束后，子序列内部进行插入排序，gap为5的子序列内部排序后如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQqBmAzuOG4VC9M9F7eLR1dqbjBeEv7uC9mI8Iw2FicvLhz1e0xAfcQKA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQqBmAzuOG4VC9M9F7eLR1dqbjBeEv7uC9mI8Iw2FicvLhz1e0xAfcQKA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQuWWiaR0uBCtI3HY7Nhvf5wqWIdicBMiaJvZg9aWNg18lVkPnX88mV86eQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQuWWiaR0uBCtI3HY7Nhvf5wqWIdicBMiaJvZg9aWNg18lVkPnX88mV86eQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 > 注：红色箭头标注的地方，是子序列内部排序后的状态
 
@@ -455,15 +455,15 @@ def insertion_sort(lst):
 
 如果数据序列比较长，则会选取第3个、第4个或者更多个间隔值，重复上述的步骤。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQnxt7u8f6XBjD7YcAibLz1Sic48uTFRnHkqhoEx498s2vZSpxBURRpIjw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQnxt7u8f6XBjD7YcAibLz1Sic48uTFRnHkqhoEx498s2vZSpxBURRpIjw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 gap为2的排序情况前后对照如下：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQP4ibFMXQLEF3ib2Lslk6liawbKEDz8yicSUicHZGEqrVdpr4FVsPxt3OT4w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQP4ibFMXQLEF3ib2Lslk6liawbKEDz8yicSUicHZGEqrVdpr4FVsPxt3OT4w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 最后一个间隔值为1，这一次相当于简单的插入排序。但是经过前几次排序，序列已经基本有序，因此最后一次排序时间效率就提高了很多。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQtzWINjbf00owIgExvGNQVlLfQdJ6m01p14Nibzgic8qRNBRMW9Pr5PkQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQtzWINjbf00owIgExvGNQVlLfQdJ6m01p14Nibzgic8qRNBRMW9Pr5PkQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 ##### Python代码
 
@@ -502,15 +502,15 @@ def shell_sort(lst):
 
 先找出待排序的数组中最大和最小的元素，新开辟一个长度为 `最大值-最小值+1` 的数组；
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQZbRMWHsDphyfdEdbpjpribpz1wPTqvfIeQ2MQP8SbhEE993VSjJWyaA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQZbRMWHsDphyfdEdbpjpribpz1wPTqvfIeQ2MQP8SbhEE993VSjJWyaA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 然后，统计原数组中每个元素出现的次数，存入到新开辟的数组中；
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQTibBstM799ep2orCCJTcHWsRnqnhKgJ40bdiavkvhLa3gYwTcFjicOOuw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQTibBstM799ep2orCCJTcHWsRnqnhKgJ40bdiavkvhLa3gYwTcFjicOOuw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 接下来，根据每个元素出现的次数，按照新开辟数组中从小到大的秩序，依次填充到原来待排序的数组中，完成排序。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQmYWiaqyZQsOfYicAFiciaO2DF1tW1dtX5jCCOVJFI5za65iclp9DN0J5NPw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQmYWiaqyZQsOfYicAFiciaO2DF1tW1dtX5jCCOVJFI5za65iclp9DN0J5NPw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 ##### Python代码
 
@@ -545,29 +545,29 @@ def counting_sort(lst):
 
 对于一个数值范围在10到 49范围内的数组，我们取桶的大小为10 （`defaultBucketSize = 10`），则第一个桶的范围为 10到20，第二个桶的数据范围是20到30，依次类推。最后，我们一共需要4个桶来放入数据。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQoqrgmyR8nCj3BudibdpicBiareaqibyc7S5KyzibObRyY5Ub9eoqqkR84kg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQoqrgmyR8nCj3BudibdpicBiareaqibyc7S5KyzibObRyY5Ub9eoqqkR84kg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQRbkiaMoBBTtnWqsSKCwdv1pT8unUmxCSTicQ7OR3KbsQDGTEMvRxpCOQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQRbkiaMoBBTtnWqsSKCwdv1pT8unUmxCSTicQ7OR3KbsQDGTEMvRxpCOQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 ##### 排序过程
 
 对于下面这个数据序列，初始设定桶的大小为 20 （`defaultBucketSize = 20`），经计算，一共需要4个桶来放入数据。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQ0Hyx7BgOD1AEIW4b80F1ER0SLEGwgyp0ERE8CSk4D744MdwsiadUMcQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQ0Hyx7BgOD1AEIW4b80F1ER0SLEGwgyp0ERE8CSk4D744MdwsiadUMcQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 然后将原始数组按数值大小放入到对应的桶中，完成数据分组。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQRq3LXeBibcsITx7E21tzm6Xqyx1bLHDYxpOiaGpCOOR2DuAUMob8bHQA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQRq3LXeBibcsITx7E21tzm6Xqyx1bLHDYxpOiaGpCOOR2DuAUMob8bHQA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 对于桶内的数据序列，这时可以用冒泡排序、选择排序等多种排序算法来对数据进行排序。这些算法，在之前的视频里已有介绍，大家可以去了解下。
 
 这里，我选用 `冒泡排序` 来对桶内数据进行排序。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQB7VQAtfMF24VQuvAdYJmicjTbhy4QDeWv7ozT8yibXpB9Vz0zibQje9GA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQB7VQAtfMF24VQuvAdYJmicjTbhy4QDeWv7ozT8yibXpB9Vz0zibQje9GA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 桶内排序完成后，将数据按桶的顺序进行合并，这样就得到所有数值排好序的数据序列了
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQr8vKfZSZQ8iaDfmhkIMrttvKBcehmcTjXB7ySyGpOCnr63Piasd6aRGg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQr8vKfZSZQ8iaDfmhkIMrttvKBcehmcTjXB7ySyGpOCnr63Piasd6aRGg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 桶排序：简单来说，桶排序就是把数据分组，放在一个个的桶中，对每个桶里面的数据进行排序，然后将桶进行数据合并，完成桶排序。
 
@@ -610,15 +610,15 @@ LSD的基数排序适用于位数小的数列，如果位数多的话，使用MS
 
 先根据个位数的数值，在扫描数值时将它们分配至编号0到9的桶中，然后将桶子中的数值串接起来。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQhSDRib25gcvXRvXgLuNA4z5n9JI4jDKRwzUcCjydL83DDLlEZQPXiavQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQhSDRib25gcvXRvXgLuNA4z5n9JI4jDKRwzUcCjydL83DDLlEZQPXiavQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQLmYokzTGYfK0zTyUXCJPI3X5aiaML1EM8SC4vDYM4IHG9F5hIQtlYLw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQLmYokzTGYfK0zTyUXCJPI3X5aiaML1EM8SC4vDYM4IHG9F5hIQtlYLw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 将这些桶子中的数值重新串接起来，成为新的序列，接着再进行一次分配，这次是根据十位数来分配。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQd3Wh6tGmIvN5sGwZGk3uibUEu8ricgqwD2OLFeQFk2dTDs4Kq6nXMYLw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQd3Wh6tGmIvN5sGwZGk3uibUEu8ricgqwD2OLFeQFk2dTDs4Kq6nXMYLw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQzaQKzL6N1Qu89Qou7icxyZQpthMcgrANePd0RJNI8icB26k6ib2UuIT5A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/gY6csrBUrKiacJuyvZz8SBGhlYgibCaWjQzaQKzL6N1Qu89Qou7icxyZQpthMcgrANePd0RJNI8icB26k6ib2UuIT5A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" width="40%" />
 
 如果排序的对象有三位数以上，则持续进行以上的动作直至最高位数为止。
 
@@ -678,7 +678,7 @@ def radix_sort(lst):
 
 9. 关于稳定性，希尔排序、快速排序和堆排序这三种排序算法无法保障。三种算法因为划分（子序列、大小端、左右孩子）后各自处理无法保证等值数据的原次序。
 
-<img src="https://img-blog.csdn.net/20180407235139160" alt="img" style="zoom: 38%;" />
+<img src="https://img-blog.csdn.net/20180407235139160" alt="img" width="60%" />
 
 
 
