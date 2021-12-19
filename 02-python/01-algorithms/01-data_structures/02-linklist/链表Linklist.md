@@ -274,6 +274,64 @@ def search(self, item):
         return found
 ```
 
+#### 双链表
+单链表结点中只有一个指向其后继的指针，这使得单链表只能从头结点依次顺序的向后遍历，访问后继结点时间复杂度为O(1),访问前驱结点的时间复杂度为O(n).
+
+<img src="https://img-blog.csdnimg.cn/20210210131846963.png" alt="在这里插入图片描述" width="50%" height="50%" />
+
+双链表仅仅是在单链表的结点中增加一个指向其前驱的prior指针，因此，在双链表中执行按值查找和按位查找的操作和单链表相同。但双链表在插入和删除操作的实现上，和单链表有着较大的不同。这是因为“链”变化时也需要对prior指针做出修改，其关键在于保证在修改的过程中不断链。此外，双链表可以很方便地找到其前驱结点，因此，插入，删除结点算法的时间复杂度为O(1).
+
+双链表的结点定义：
+
+```python
+class linknode():#每个结点有两个数据成员，结点元素和指向下一个结点的指针
+    def __init__(self,item):
+        self.item=item
+        self.next=None
+		self.prior=None
+```
+
+插入节点：
+
+<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/20210210133233389.png" alt="img" width="50%" height="50%" />
+
+在双链表中p指向的结点之后插入s指向的节点，执行代码为：
+
+```python
+s->next=p->next
+s->prior=p
+p->next->prior=s
+p-next=s
+```
+
+删除节点
+
+<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/20210222123043398.png" alt="在这里插入图片描述" width="50%" height="50%" />
+
+删除双链表中q指向的结点，执行代码：
+
+```pyton
+p->next=q->next
+q->next->prior=p
+```
+
+#### 循环链表
+##### 循环单链表
+循环单链表和单链表的区别在于，表中最后一个结点的指针不是NULL，而改为指向头结点，从而整个链表形成一个环。
+
+<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/20210222123619597.png" alt="循环单链表" width="50%" height="50%" />
+
+表尾指针的next指向头结点，因此表中没有指针域为NULL的结点，因此循环单链表的判空条件为：
+
+`头结点->next==L？True:False`
+
+##### 循环双链表
+和循环单链表的不同在于：头结点的prior指针还要指向尾结点，其余的结点也都有两个指针域,prior指向它的前驱结点。
+
+<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/20210222124432620.png" alt="在这里插入图片描述" width="50%" height="50%" />
+
+
+当循环双链表为空表时，其头结点的prior和next都等于L
 
 
 #### Reference
