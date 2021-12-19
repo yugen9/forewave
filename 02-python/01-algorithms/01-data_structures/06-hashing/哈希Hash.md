@@ -65,14 +65,14 @@
 - 链接地址法
   碰到冲突时，不更换地址，而是将所有关键字为同义词的记录存储在一个链表里，在散列表中只存储同义词子表的头指针，如下图：
 
-![img](http://www.uml.org.cn/python/images/20171218333.png)
+<img src="http://www.uml.org.cn/python/images/20171218333.png" alt="img" width="40%" />
 
 这样的好处是，不怕冲突多；缺点是降低了散列结构的随机存储性能。本质是用单链表结构辅助散列结构的不足。
 
 - 公共溢出区法
   其实就是为所有的冲突，额外开辟一块存储空间。如果相对基本表而言，冲突的数据很少的时候，使用这种方法比较合适。
 
-![img](http://www.uml.org.cn/python/images/20171218334.png)
+<img src="http://www.uml.org.cn/python/images/20171218334.png" alt="img" width="20%" />
 
 ##### 散列表查找实现
 
