@@ -78,7 +78,7 @@ PriorityQueue更高级，不但使用list替换了，还用heappush和heappop替
 
 │  \__init__.py
 
-│  队列Queue.md 学习笔记
+│  [队列Queue.md](./队列Queue.md) 学习笔记
 
 
 
