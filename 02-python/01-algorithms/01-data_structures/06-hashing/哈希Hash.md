@@ -65,14 +65,26 @@
 - 链接地址法
   碰到冲突时，不更换地址，而是将所有关键字为同义词的记录存储在一个链表里，在散列表中只存储同义词子表的头指针，如下图：
 
-<img src="http://www.uml.org.cn/python/images/20171218333.png" alt="img" width="40%" />
+![img](http://www.uml.org.cn/python/images/20171218333.png)
 
 这样的好处是，不怕冲突多；缺点是降低了散列结构的随机存储性能。本质是用单链表结构辅助散列结构的不足。
 
 - 公共溢出区法
   其实就是为所有的冲突，额外开辟一块存储空间。如果相对基本表而言，冲突的数据很少的时候，使用这种方法比较合适。
 
-<img src="http://www.uml.org.cn/python/images/20171218334.png" alt="img" width="20%" />
+![img](http://www.uml.org.cn/python/images/20171218334.png)
+
+* 双重散列法(Double Hashing)
+
+> 双重哈希可以处理 :
+> **(hash1(key) + i \* hash2(key)) % TABLE_SIZE**
+> 这里 hash1() 、 hash2() 是hash 函数， TABLE_SIZE 是hash表大小
+> (如果发生冲突，i递增然后重复运算)
+
+通俗的二次Hash函数：**hash2(key) = PRIME – (key % PRIME)**
+**PRIME**一般选择小于 **TABLE_SIZE** 的质数
+
+该方法使用了两个散列函数h(key)和h1(key)，故也称为双散列函数探查法。
 
 ##### 散列表查找实现
 
@@ -130,3 +142,14 @@ if __name__ == '__main__':
 - 散列函数是否均匀
 - 处理冲突的办法
 - 散列表的装填因子（表内数据装满的程度）
+
+**代码实现：**
+
+│  h1_hash_table.py 哈希表
+│  h2_hash_table_with_linked_list.py 分离链表哈希表
+│  h3_quadratic_probing.py 二次探测哈希表
+│  h4_double_hash.py 双重哈希表
+│  prime_numbers.py 素数
+│  \_\_init__.py
+│  [哈希Hash.md](./哈希Hash.md)  学习笔记
+
