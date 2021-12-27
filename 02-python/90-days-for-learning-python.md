@@ -1,4 +1,4 @@
-> *人生苦短，我用python*                                                                                                                                           [<img src="C:\Users\yug\Desktop\9.jpeg" alt="Github" style="zoom: 15%;" />](https://github.com/yugen9/forewave)
+> *人生苦短，我用python*                                                                                                                                           [<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/9.jpeg" alt="Github" style="zoom: 15%;" />](https://github.com/yugen9/forewave)
 
 # 90 days for learning python
 

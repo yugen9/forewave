@@ -1,4 +1,6 @@
-# typing模块的使用方法
+
+
+# [typing模块的使用方法](https://docs.python.org/zh-cn/3/library/typing.html)
 
 [toc]
 
@@ -349,6 +351,109 @@ def infinite_stream(start: int) -> Generator[int, None, None]:
 	while True: 
 		yield start 
 		start += 1
+```
+
+#### Type aliases
+
+  简单的类型注解及其形式如开篇例子所示，那么除了默认的int、str等简单类型，就可以通过typing模块来实现注解。首先，我们可以通过给类型赋予别名，简化类型注释，如下例中的Vector和List[float]是等价的。
+
+```python
+from typing import List
+Vector = List[float]
+
+def scale(scalar: float, vector: Vector) -> Vector:
+    return [scalar * num for num in vector]
+```
+
+  上面的例子，似乎不能很好的体现类型注释别名的优势，官网还给了另外一个例子，非常生动形象：
+
+```python
+from typing import Dict, Tuple, Sequence
+
+ConnectionOptions = Dict[str, str]
+Address = Tuple[str, int]
+Server = Tuple[Address, ConnectionOptions]
+
+def broadcast_message(message: str, servers: Sequence[Server]) -> None:
+    pass
+
+def broadcast_message2(
+        message: str,
+        servers: Sequence[Tuple[Tuple[str, int], Dict[str, str]]]) -> None:
+    pass
+```
+
+#### Generics
+
+  由于无法以通用的方式静态推断有关保存在容器（list set tuple）中对象的类型信息，因此抽象类被用来拓展表示容器中的元素。如下面子里中，使用基类Employee来扩展其可能得子类如 Sub1_Employee、Sub2_Employee等。但是其局限性明显，所以我们需要引入泛型(generics)。
+
+```python
+from typing import Mapping, Sequence
+
+def notify_by_email(employees: Sequence[Employee],
+                    overrides: Mapping[str, str]) -> None:
+    pass
+```
+
+
+  可以通过typing中的TypeVar将泛型参数化，如：
+
+```python
+from typing import Sequence, TypeVar
+
+T = TypeVar('T')      # Can be anything
+A = TypeVar('A', str, bytes)  # Must be str or bytes
+
+def first(l: Sequence[T]) -> T:   # Generic function
+    return l[0]
+```
+
+##### User-defined generic types
+
+  可以将用户字定义的类定义为泛型类：
+
+```python
+from typing import TypeVar, Generic
+from logging import Logger
+
+T = TypeVar('T')
+
+class LoggedVar(Generic[T]):
+    def __init__(self, value: T, name: str, logger: Logger) -> None:
+        self.name = name
+        self.logger = logger
+        self.value = value
+
+    def set(self, new: T) -> None:
+        self.log('Set ' + repr(self.value))
+        self.value = new
+
+    def get(self) -> T:
+        self.log('Get ' + repr(self.value))
+        return self.value
+
+    def log(self, message: str) -> None:
+        self.logger.info('%s: %s', self.name, message)       
+```
+  Generic[T] 作为基类定义了类 LoggedVar 采用单个类型参数 T。这也使得 T 作为类体内的一个类型有效。通过Generic基类使用元类(metaclass)定义__getitem__()使得LoggedVar[t]是有效类型:
+```python
+from typing import Iterable
+
+def zero_all_vars(vars: Iterable[LoggedVar[int]]) -> None:
+    for var in vars:
+        var.set(0)
+```
+
+  泛型类型可以有任意数量的类型变量，并且类型变量可能会受到限制:
+
+```python
+from typing import TypeVar, Generic
+
+T = TypeVar('T')
+S = TypeVar('S', int, str)
+
+class StrangePair(Generic[T, S]):
+    pass
 ```
 
 
