@@ -1,4 +1,4 @@
-> *人生苦短，我用python*                                                                                                                                           [<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/9.jpeg" alt="Github" style="zoom: 15%;" />](https://github.com/yugen9/forewave)
+> *人生苦短，我用python*                                                                                                                                           [<img src="C:\Users\yug\Desktop\9.jpeg" alt="Github" style="zoom: 15%;" />](https://github.com/yugen9/forewave)
 
 # 90 days for learning python
 
@@ -13,10 +13,7 @@
 - [ ] 7.设计模式
 - [ ] 8.Cpython
 
-**准备工作：**
 
-* 搭建运行环境与编辑环境：安装python及pycharm或vscode等编辑软件
-* 了解python基本语法，如内置数据类型、if、for、函数、类、模块等概念及其使用
 
 # 1.数据结构与算法
 ## 1.1 数据结构
@@ -40,7 +37,10 @@
 
 # 3.LeeCode
 
+# [0. Python编程规范（google)](https://github.com/yugen9/forewave/blob/master/10-docs/Python代码风格指南（Google）.md))
+
 # 4.爬虫实战
+
 # 5.数据分析与可视化
 # 6.机器学习深度学习
 
