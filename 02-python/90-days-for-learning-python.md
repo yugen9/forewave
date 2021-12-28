@@ -33,7 +33,7 @@
 ### [1.2.2 排序算法Sort](./01-algorithms/03-sorts/排序算法Sort.md)
 ### [1.2.3 其他算法](./01-algorithms/04-others/Other.md)
 
-# 2. effective python
+# [2. effective python](https://github.com/yugen9/forewave/blob/master/02-python/02-effective-python/Effective Python之编写高质量Python代码的59个有效方法.md)
 
 # 3.LeeCode
 
