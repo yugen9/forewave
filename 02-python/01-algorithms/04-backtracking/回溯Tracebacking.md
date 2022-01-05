@@ -1625,7 +1625,7 @@ Minimax算法又名极小化极大算法，是一种找出失败的最大可能�
 
   下图是上述示例问题的格局树：
 
-![img](https://1001-1308754723.cos.ap-shanghai.myqcloud.com/01.png)
+<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/01.png" alt="img" width="50%" />
 
   注意，由于示例问题格局数非常少，我们可以给出完整的格局树。这种情况下我可以找到Minimax算法的全局最优解。而真实情况中，格局树非常庞大，即使是计算机也不可能给出完整的树，因此我们往往只搜索一定深度，这时只能找到局部最优解。
 
@@ -1633,14 +1633,14 @@ Minimax算法又名极小化极大算法，是一种找出失败的最大可能�
 
   下面考虑倒数第二层节点，在这些节点上，轮到我方选择，所以我们应该引入可选择的最大价值格局，因此每个节点的价值为其子节点的最大值：
 
-![img](https://1001-1308754723.cos.ap-shanghai.myqcloud.com/02.png)
+<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/02.png" alt="img" width="50%" />
 
   这些轮到我方的节点叫做max节点，max节点的值是其子节点最大值。
 
   倒数第三层轮到对方选择，假设对方会尽力将局势引入让我方价值最小的格局，因此这些节点的价值取决于子节点的最小值。  这些轮到对方的节点叫做min节点。
   最后，根节点是max节点，因此价值取决于叶子节点的最大值。最终完整赋值的格局树如下：
 
-![img](https://1001-1308754723.cos.ap-shanghai.myqcloud.com/03.png)
+<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/03.png" alt="img" width="50%" />
 
 总结一下Minimax算法的步骤：
 1. 首先确定最大搜索深度D，D可能达到终局，也可能是一个中间格局。
@@ -1650,7 +1650,7 @@ Minimax算法又名极小化极大算法，是一种找出失败的最大可能�
 
 在上面的例子中，根节点的价值为20，表示如果对方每一步都完美决策，则我方按照上述算法可最终拿到20元，这是我方在Minimax算法下最好的决策。格局转换路径如下图红色路径所示：
 
-![img](https://1001-1308754723.cos.ap-shanghai.myqcloud.com/04.png)
+<img src="https://1001-1308754723.cos.ap-shanghai.myqcloud.com/04.png" alt="img" width="50%" />
 
 强调几点：
 
