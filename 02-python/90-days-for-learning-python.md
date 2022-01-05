@@ -31,7 +31,7 @@
 ## 1.2 算法
 ### [1.2.1 查找算法Search](./01-algorithms/02-searches/查找算法Search.md)
 ### [1.2.2 排序算法Sort](./01-algorithms/03-sorts/排序算法Sort.md)
-### [1.2.3 回溯算法](./01-algorithms\04-backtracking/回溯Tracebacking.md)
+### [1.2.3 回溯算法](./01-algorithms/04-backtracking/回溯Tracebacking.md)
 
 # [2. effective python](https://github.com/yugen9/forewave/blob/master/02-python/02-effective-python/Effective_Python之编写高质量Python代码的59个有效方法.md)
 
