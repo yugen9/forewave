@@ -2,11 +2,11 @@
 先花个仨月试试：
 
 - 第一个月
-  - 2weeks
+  - 2weeks  (推荐[geeksforgeeks.org](https://www.geeksforgeeks.org/python-programming-language/learn-python-tutorial/))
     - 搭建环境与安装工具：熟悉python及jupyter或pycharm或vscode等工具使用
     - 了解python基本语法
   - 2weeks
-    - leecode找一些简单题目练练手
+    - leecode找一些简单题目练练手  (上面Leetcode目录)
 - 第二个月
   - 2weeks
     - 前端知识（HTML/JS/CSS)，F12开发者工具
