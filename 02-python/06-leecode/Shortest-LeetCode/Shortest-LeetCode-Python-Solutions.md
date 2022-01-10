@@ -328,7 +328,7 @@ class Solution:
 
 ### [1.1.2 链表](https://leetcode-cn.com/explore/learn/card/linked-list/)
 
-- 基础知识参考：[1.1.2 链表Linklist](https://www.cnblogs.com/yugen9/articles/15684252.html)
+- 基础知识参考：[1.1.2 链表Linklist](../../01-algorithms/01-data_structures/02-linklist/链表Linklist.md)
 
 #### [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
 
@@ -750,8 +750,8 @@ class MyLinkedList:
 
 ### [1.1.3 队列 & 栈](https://leetcode-cn.com/explore/learn/card/queue-stack/)
 
-* 基础知识参见：[1.1.3 栈Stack](https://www.cnblogs.com/yugen9/articles/15684281.html)
-* 基础知识参见：[1.1.4 队列Queue](https://www.cnblogs.com/yugen9/articles/15684290.html)
+* 基础知识参见：[1.1.3 栈Stack](../../01-algorithms/01-data_structures/03-stack/栈Stack.md)
+* 基础知识参见：[1.1.4 队列Queue](../../01-algorithms/01-data_structures/04-queue/队列Queue.md)
 
 - Python 有内置的高效**模块**实现队列/栈/优先队列：[queue模块](https://www.baidu.com/link?url=ucsY59H7zFlkJcIFNblaRqxfOmas8kRjDDro5uV3D8R2QVWWRNXWPKm2yQNAZBmOd6YGClvCsS8sZJsTTmMqGq&wd=&eqid=cbe60f050006128b000000065cd99a2e)
 - Python 的 collections 模块提供的[ 双向队列 collections.deque ](https://www.baidu.com/link?url=-qZCpylhJB1LQ_DMC_6eJil4g9xLaHI8IbSsHpfxG1ZEPKH_AFN8sptkOXkKqjDr0E5atG6QSLELpTSww6Z3UKnLEf0eSppKGfssCw7fq3m&wd=&eqid=821793550017be6e000000065ce99df2)同时具有 栈 和 队列 的性质，也是一个不错的选择
@@ -1396,13 +1396,13 @@ class Solution:
 
 ### 1.1.5 堆
 
-* 基础知识参考：[1.1.5 堆Heap](https://www.cnblogs.com/yugen9/articles/15684304.html)
+* 基础知识参考：[1.1.5 堆Heap](../../01-algorithms/01-data_structures/05-heap/堆Heap.md)
 
 
 
 ### [1.1.6 哈希表](https://leetcode-cn.com/leetbook/detail/hash-table/)
 
-* 基础知识参考：[1.1.6 哈希Hashing](https://www.cnblogs.com/yugen9/articles/15684310.html)
+* 基础知识参考：[1.1.6 哈希Hashing](../../01-algorithms/01-data_structures/06-hashing/哈希Hash.md)
 
 #### [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
 
@@ -1853,7 +1853,7 @@ class Solution:
 
 ### [1.1.8.1 二叉树](https://leetcode-cn.com/leetbook/detail/data-structure-binary-tree/)
 
-* 基础知识参考：[1.1.8 树Tree](https://www.cnblogs.com/yugen9/articles/15684316.html)
+* 基础知识参考：[1.1.8 树Tree](../../01-algorithms/01-data_structures/08-tree/树Tree.md)
 
 **树的遍历**
 ![](https://1001-1308754723.cos.ap-shanghai.myqcloud.com/tree.png)
@@ -2447,7 +2447,7 @@ class Solution:
 
 ### 1.1.9 图
 
-* 基础知识参考：[1.1.9 图Graph](https://www.cnblogs.com/yugen9/articles/15684322.html)
+* 基础知识参考：[1.1.9 图Graph](../../01-algorithms/01-data_structures/09-graphs/图Graph.md)
 
 
 
@@ -2455,7 +2455,7 @@ class Solution:
 
 ### 1.2.1 查找算法
 
-* 基础知识参考：[1.2.1 查找算法Search](https://www.cnblogs.com/yugen9/articles/15684330.html)
+* 基础知识参考：[1.2.1 查找算法Search](../../01-algorithms/02-searches/查找算法Search.md)
 
 ### [1.2.1.1 二分查找](https://leetcode-cn.com/leetbook/detail/binary-search/)
 
@@ -3320,19 +3320,19 @@ class KthLargest:
 
 ### 1.2.2 排序算法
 
-* 基础知识参考：[1.2.2 排序算法Sort](https://www.cnblogs.com/yugen9/articles/15684336.html)
+* 基础知识参考：[1.2.2 排序算法Sort](../../01-algorithms/03-sorts/排序算法Sort.md)
 
 ### 1.2.3 回溯算法
 
-* 基础知识参考：[1.2.3 回溯算法Tracebacking](https://www.cnblogs.com/yugen9/articles/15769447.html)
+* 基础知识参考：[1.2.3 回溯算法Tracebacking](../../01-algorithms/04-backtracking/回溯Tracebacking.md)
 
 ### 1.2.4 动态规划
 
-* 基础知识参考：[1.2.4 动态规划算法DynamicProgramming](https://www.cnblogs.com/yugen9/articles/15777259.html)
+* 基础知识参考：[1.2.4 动态规划算法DynamicProgramming](../../01-algorithms/05-dynamic_programming/动态规划DynamicProgramming.md)
 
 ### 1.2.5 贪婪算法
 
-* 基础知识参考：[1.2.5 贪婪算法Greedy](https://www.cnblogs.com/yugen9/articles/15777257.html)
+* 基础知识参考：[1.2.5 贪婪算法Greedy](../../01-algorithms/06-greedy/贪婪算法Greedy.md)
 
 ### 1.2.6 递归
 
