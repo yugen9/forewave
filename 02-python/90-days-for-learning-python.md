@@ -53,6 +53,12 @@
 
 # 4.爬虫实战[^9][^10]
 
+## 4.5 玩
+
+### [4.5.1 VIP视频爬取](./03-scraping/05.play/01-vipvideo/VIP视频爬取.md)
+
+### [4.5.2 VIP歌曲爬取](./03-scraping/05.play/01-vipvideo/VIP歌曲爬取.md)
+
 
 
 # 5.数据分析与可视化
