@@ -17,7 +17,7 @@
 
 # 1.数据结构与算法[^1][^2][^3][^4]
 ## 1.1 数据结构
-### [1.1.1 Build-in](./01-algorithms/01-data_structures/01-Build-in/Build-in.md)
+### [1.1.1 Build-in](./01-algorithms/01-data_structures/01-build-in/Build-in.md)
 ### [1.1.2 链表Linklist](./01-algorithms/01-data_structures/02-linklist/链表Linklist.md)
 
 ### [1.1.3 栈Stack](./01-algorithms/01-data_structures/03-stack/栈Stack.md)
